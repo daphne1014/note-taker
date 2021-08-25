@@ -18,7 +18,7 @@ function findById(id, notesArray) {
     return result;
 };
 function createNewNote(body, notesArray) {
-    console.log(body);
+    // console.log(body);
     // our function's main code will go here!
     const note = body;
     notesArray.push(note);
@@ -42,8 +42,8 @@ function validateNote(note) {
 
 app.get('/api/notes', (req, res) => {
     let results = notes;
-    console.log(req.query)
-    console.log(req.params)
+    // console.log(req.query)
+    // console.log(req.params)
     res.json(results);
 }
 );
@@ -59,7 +59,7 @@ app.get('/api/notes/:id', (req, res) => {
 
 app.post('/api/notes', (req, res) => {
     // req.body is where our incoming content will be
-    console.log(req.body);
+    // console.log(req.body);
 
     // set id based on what the next index of the array will be
     req.body.id = notes.length.toString();
@@ -73,6 +73,10 @@ app.post('/api/notes', (req, res) => {
         const note = createNewNote(req.body, notes);
         res.json(note);
     }
+});
+app.delete('/api/notes/:id',(req,res)=>{
+    const id = req.params.id;
+    res.send("DELETE Request Called")
 });
 //HTMLRoutes
 app.get('/', (req, res) => {
