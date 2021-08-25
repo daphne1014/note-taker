@@ -4,21 +4,6 @@
       "id": "1",
       "title": "Test Title",
       "text": "Test text"
-    },
-    {
-      "title": "title2",
-      "text": "text2",
-      "id": "1"
-    },
-    {
-      "title": "title3",
-      "text": "text3",
-      "id": "2"
-    },
-    {
-      "title": "title2",
-      "text": "text3",
-      "id": "3"
     }
   ]
 }
