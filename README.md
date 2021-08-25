@@ -16,10 +16,9 @@ Acceptance Criteria
 ## Installation
 * Path
 * Express
-* uniqid
 
 ## Screenshot
-![walkthrough video](./Develop/assets/READMEpreview.gif?raw=true "A walkthrough video demonstrating the functionality of the application")
+![walkthrough video](./public/assets/images/screenshot.gif?raw=true "A walkthrough video demonstrating the functionality of the application")
 
 ## Contribution
 Made with ❤️ by Daphne
